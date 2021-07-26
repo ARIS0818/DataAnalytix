@@ -1,0 +1,143 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top text-center" id="navbar">
+  <a routerLink="/Accueil" class="navbar-brand">
+    <img src="/assets/Images/DAX-logo.png" alt="LOGO">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="myMenu">
+    <ul class="navbar-nav text-uppercase" ng-app="link">
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/Accueil" class="nav-link" active-link="active"> Accueil </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/Propos" class="nav-link" active-link="active"> Nos Propos </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/Activites" class="nav-link" active-link="active"> Nos activités </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/References" class="nav-link" active-link="active"> Nos Références </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/Recrutement" class="nav-link" active-link="active"> Recrutement </a>
+      </li>
+      <li class="nav-item" id="nav-item">
+        <a href="#ModalScrollable" data-toggle="modal" class="nav-link">Contacter nous</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Fonction Modal -->
+<div class="modal fade" id="ModalScrollable" tabindex="-13" role="dialog" aria-labelledby="ModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <p>Contacter nous</p>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-danger rounded-pill" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<!-- 555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+          <div class="container" data-aos="fade-up">
+            <div class="row mt-5">
+              <div class="col-lg-4">
+                <div class="info">
+                  <div class="address">
+                    <i class="icofont-google-map"></i>
+                    <h4>Adresse:</h4>
+                      <ul>
+                        <li>
+                          Pays : MADAGASCAR
+                        </li>
+                        <li>
+                          Region: Vakinankaratra</li>
+                        <li>
+                          Ville: Antsirabe </li>
+                        <li>
+                          Lot: 0512 B 300 Tsarasaotra </li>
+                      </ul>
+                  </div>
+
+                  <div class="open-hours">
+                    <i class="icofont-clock-time icofont-rotate-90"></i>
+                    <h4>Horaire:</h4>
+                    <p>
+                      Lundi-Dimanche:<br>
+                      08:00 AM - 18:00 PM
+                    </p>
+                  </div>
+
+                  <div class="email">
+                    <i class="icofont-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>dax@dataanalytix.com</p>
+                  </div>
+
+                  <div class="phone">
+                    <i class="icofont-phone"></i>
+                    <h4>Téléphone:</h4>
+                    <p>+261 324 456 789</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-8 mt-5 mt-lg-0">
+
+                <form role="form" class="email-form">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Veiller au moins saisir 4 caractères" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Adresse E-mail" data-rule="email" data-msg="Verifier que l'adresse saisie est valide" />
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="Veiller au moins saisir 8 caractères pour objet" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Envoi réussit!</div>
+                  </div>
+                  <div class="text-left">
+                    <button class="send" type="submit">Envoyer</button>
+                  </div>
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section><!-- End Contact Section -->
+<!-- 555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 -->
+      </div>
+      <!-- <div class="modal-footer">
+        <div class="text">
+          <button type="reset" class="cancel" data-dismiss="modal">Annuler</button>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

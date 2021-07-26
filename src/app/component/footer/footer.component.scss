@@ -1,0 +1,29 @@
+.container-fluid{
+  background: rgba(0, 0, 10, 0.733);
+  border-top: 1px solid rgba(2, 147, 190, 0.575);
+  border-bottom: 1px solid rgba(2, 147, 190, 0.575);
+  transition: all 0.5s;
+  top: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.container-fluid .row img{
+  width: 150px;
+  height: 150px;
+}
+
+.container-fluid .feature-left h3{
+  margin-top: 10px;
+  color: #ffff;
+}
+
+.container-fluid .feature-left ul{
+  list-style: none;
+}
+
+#features .link{
+  text-align: center;
+}

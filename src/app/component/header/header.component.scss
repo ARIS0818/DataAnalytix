@@ -1,0 +1,311 @@
+.navbar-brand{
+  font-family: "Century gothic";
+  size: 25px;
+  // border-top: 2px solid rgba(2, 147, 190, 0.575);
+  margin-left: 5%;
+}
+.navbar {
+  background: rgba(12, 11, 9, 0.842);
+  border-bottom: 1px solid rgba(2, 147, 190, 0.575);
+  border-top: 1px solid rgba(2, 147, 190, 0.575);
+  transition: all 0.5s;
+  padding: 15px 0;
+  top: 5px;
+}
+
+.navbar.navbar-scrolled{
+  background: red;
+}
+
+.navbar .navbar-brand img{
+  box-sizing: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: hand;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.navbar .navbar-brand img:hover{
+  box-sizing: 50px;
+  width: 60px;
+  height: 60px;
+  cursor: hand;
+  transition-duration: 0.5s;
+}
+
+#header.header-scrolled {
+  top: 0;
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid #37332a;
+}
+
+
+#header .logo img {
+  max-height: 40px;
+}
+
+ul #nav-item a{
+  border: 2px solid #1305d479;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+ul #nav-item a:hover {
+  border: 4px solid #1204d810;
+  color: #fff;
+  background: #1305d479;
+}
+
+.collapse .nav-item.active{
+  color: rgba(6, 138, 190, 0.575);
+  border-bottom: 2px solid rgba(4, 56, 116, 0.575);
+}
+
+
+.collapse a:hover, .collapse > a{
+  color: rgba(6, 138, 190, 0.575);
+  border-bottom: 2px solid rgba(4, 56, 116, 0.575);
+  font-size: large;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+ul{
+  margin-left: 25%;
+}
+
+ul li.nav-item{
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+.section-title p {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #02bac7;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.modal-content{
+  background-image: url(/assets/Images/tech-planet.jpg);
+  border-radius: 10px;
+}
+
+.contact .info {
+    width: 100%;
+  }
+
+  .contact .info .address{
+    padding-top: -30px;
+  }
+
+  .contact .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #11cff08e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact .info h4 {
+    color: #fff;
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+
+  .contact .info ul {
+    list-style: none;
+    padding: 0 0 0 0px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+.contact .info .open-hours, .contact .info .email, .contact .info .phone {
+   margin-top: 40px;
+  }
+
+  .contact .email-form {
+    width: 100%;
+  }
+
+  .contact .email-form .form-group {
+    padding-bottom: 25px;
+  }
+
+  .contact .email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .contact .email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .contact .email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .contact .email-form .loading {
+    display: none;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .contact .email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #cda45e;
+    border-top-color: #1a1814;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+
+  .contact .email-form input, .contact .email-form textarea {
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 14px;
+    background: #00000000;
+    border-color: #0c2fc7af;
+    color: white;
+  }
+
+  .contact .email-form input::-webkit-input-placeholder, .contact .email-form textarea::-webkit-input-placeholder {
+    color: #a49b89;
+  }
+
+  .contact .email-form input::-moz-placeholder, .contact .email-form textarea::-moz-placeholder {
+    color: #a49b89;
+  }
+
+  .contact .email-form input:-ms-input-placeholder, .contact .email-form textarea:-ms-input-placeholder {
+    color: #a49b89;
+  }
+
+  .contact .email-form input::-ms-input-placeholder, .contact .email-form textarea::-ms-input-placeholder {
+    color: #a49b89;
+  }
+
+  .contact .email-form input::placeholder, .contact .email-form textarea::placeholder {
+    color: #a49b89;
+  }
+
+  .contact .email-form input:focus, .contact .email-form textarea:focus {
+    border-color: #1607e9;
+  }
+
+  .contact .email-form input {
+    height: 44px;
+  }
+
+  .contact .email-form textarea {
+    padding: 10px 12px;
+  }
+
+  .contact .email-form button[type="submit"] {
+    background: #07f0707c;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    background-position: left;
+  }
+
+  .contact .email-form button[type="submit"]:hover {
+    background: #d3af71;
+  }
+
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .modal-footer button[type="reset"]  {
+    background: #ce0753;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+  .modal-footer button{
+    margin-right: 25px;
+  }
+

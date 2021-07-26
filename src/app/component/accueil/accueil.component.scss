@@ -1,0 +1,126 @@
+section>h2 {
+  color: #6f51ac;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 115px auto 50px;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin: 115px 0 50px;
+}
+
+section>h2::before {
+  background: #01d262 none repeat scroll 0 0;
+  bottom: -13px;
+  content: "";
+  height: 2px;
+  left: 48%;
+  position: absolute;
+  width: 75px;
+  margin: 0 auto;
+}
+
+section .text h4 {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+ section .text p {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+section .text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 8);
+}
+.Hero{
+  padding-top: 1px;
+  margin-top: 10px;
+  background-image: url(/assets/Images/Integrite-donnees.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.Hero .single_news {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 8);
+  margin-bottom: 130px;
+  margin-top: 70px;
+  border-radius: 0px 30px 0px 30px;
+  background-color: rgba(10, 13, 220, 0.171);
+}
+
+
+.Hero .single_news img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.Hero .single_news .texts {
+  padding: 30px;
+}
+
+
+
+.Hero .single_news .texts h2 {
+  color: rgb(10, 147, 189);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 0;
+}
+
+.Hero .single_news .texts h4 {
+  color: rgb(10, 147, 189);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-top: 20px;
+}
+
+.Hero .single_news .texts p.test {
+  color: rgb(214, 200, 200);
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.Hero .single_news .texts h3 a {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.Hero .single_news:hover .texts h3 {
+  color: #7503d33f;
+}
+
+.Hero .single_news:hover .texts h3 a {
+  color: #7503d33f;
+  text-decoration: underline;
+}
